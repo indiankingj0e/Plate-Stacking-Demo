@@ -88,7 +88,7 @@ def remove_plates():
             print(f"You cannot remove {numberOfPlates} plates from a stack of only {len(plates)}!")
         else:
             for plate in range(numberOfPlates):
-                plates.pop()
+                plates.pop(0)
             #display confirmation message
             if numberOfPlates == 0:
                 print("No plates were removed.")
